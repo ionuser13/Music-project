@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box; 
+}
+
+body {
+    background-color: #ddd5be;
+    font-family: verdana;
+}
+
+.parent-info {
+   margin: 1rem;
+   padding: 1rem 1rem;
+   text-align: left;
+ }
+ .short-info {
+   display: inline-block;
+   padding: 1rem 1rem;
+   vertical-align: middle;
+ }
+hr {
+   border: 0px;
+}
+
+h1 {
+    width: auto;
+    padding: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ .figcaption-cover {
+    text-align: center;
+    width: 200px;
+ }
+ ul {
+    list-style: none;
+ }
+ h3 {
+    margin: 0px;
+ }
+ th {
+   text-align: left;
+   padding: 5px;
+ }
+ td {
+   padding: 5px;
+ }
