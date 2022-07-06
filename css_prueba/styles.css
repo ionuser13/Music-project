@@ -14,3 +14,9 @@ body
     padding: 2em;
     margin: 0 auto;
 }
+
+#cabecera {
+    background-color: skyblue;
+    font-size: 14px;
+    margin: 0 auto;
+}
