@@ -20,6 +20,23 @@ body {
 hr {
    border: 0px;
 }
+.parent-song-body {
+   margin: 1rem;
+   padding: 1rem 1rem;
+   text-align: center;
+   width: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.body1 {
+   display: inline-block;
+   padding: 1rem 1rem;
+   vertical-align: top;
+
+}
 
 h1 {
     width: auto;
@@ -46,3 +63,15 @@ h1 {
  td {
    padding: 5px;
  }
+ 
+ @media (max-width: 800px) {
+.parent-song-body {
+   width: 50%;
+}
+ }
+
+ @media (max-width: 600px) {
+   .parent-song-body {
+      width: 100%;
+   }
+    }
