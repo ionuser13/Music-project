@@ -37,8 +37,8 @@ hr {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: space-around;
-   overflow: hidden;
+   justify-content: space-evenly;
+   overflow: hidden; 
 }
 
 .body1 {
