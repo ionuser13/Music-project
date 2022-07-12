@@ -20,7 +20,7 @@ body {
    display: inline-block;
    vertical-align: middle;
  }
- .short-info, .socials {
+ .short-info {
    display: inline-block;
    padding: 0;
    vertical-align: middle;
@@ -73,7 +73,7 @@ h1 {
  td {
    padding: 5px;
  }
- 
+
  @media (max-width: 800px) {
 .parent-song-body {
    width: 100%;
