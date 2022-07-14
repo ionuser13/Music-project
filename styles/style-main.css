@@ -42,7 +42,7 @@ body {
 figure {
    margin: 0;
 }
-.short-sub-info figure {
+.short-sub-info figure, .short-info figure {
    padding: 0.5rem 0;
 }
 .body1 figure {
