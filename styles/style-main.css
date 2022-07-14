@@ -2,7 +2,9 @@
   box-sizing: border-box; 
   border: 1px solid black;
 }
-
+.menu {
+   padding: 0;
+}
 body {
     font-family: verdana;
 }
@@ -82,6 +84,8 @@ h1 {
  }
  ul {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
  }
  h3 {
     margin: 0px;
