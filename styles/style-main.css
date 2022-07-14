@@ -9,7 +9,6 @@ body {
     font-family: verdana;
     margin: 0;
 }
-
 .supreme-parent-info {
    width: 100%;
    text-align: center;
@@ -41,7 +40,9 @@ body {
    vertical-align: middle;
    height: 100%;
  }
-
+table {
+   border: 0;
+}
 figure {
    margin: 0;
 }
@@ -93,10 +94,11 @@ h1 {
  }
  th {
    text-align: left;
-   padding: 5px;
+   border: 0;
  }
  td {
-   padding: 5px;
+   padding: 1%;
+   border: 0;
  }
 
  @media (max-width: 800px) {
