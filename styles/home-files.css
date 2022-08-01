@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+main {
+    height: 100%;
+}
+section {
+    position: relative;
+    top: 3rem;
+}
+#description {
+    margin: 1rem 4rem;
+}
+#grid-container {
+    display: grid;
+    grid-template: 4 / 2;
+}
+.grid-element {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+.grid-element img {
+    width: 50px;
+    height: 50px;
+}
