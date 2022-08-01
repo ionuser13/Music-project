@@ -79,7 +79,7 @@ main {
  article.socials {
    width: 100%;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    margin: 1rem 0;
  }
  #member-socials {
@@ -145,10 +145,9 @@ iframe {
 }
 #platforms {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    padding: 1rem 0;
 }
-#footer {
-   display: flex;
-   justify-content: space-around;
+#platforms figure {
+   margin: auto 0;
 }
