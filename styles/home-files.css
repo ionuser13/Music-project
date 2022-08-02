@@ -14,21 +14,38 @@ main {
     height: calc(100% - 6rem);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+.bg-image {
+    height: calc(100vh - 6rem);
+    background-image: url(https://noticias.nmas.com.mx/wp-content/uploads/2021/11/Spotify-Magic-Playlist-te-ayudara%CC%81-a-encontrar-canciones-parecidas-a-tu-favorita.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+
 }
 #welcome-section h1 {
     font-size: 4rem;
+    width: max-content;
     border: 1px solid white;
     text-align: center;
+    margin: 3rem 0;
 }
 #welcome-description {
     margin: 1rem 3rem;
 }
 #grid-container {
+    height: calc(100vh - 6rem);
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
     margin: 0 3rem;
     gap: 2rem 0rem;
+    position: relative;
+    top: 2rem;
 }
 .grid-element {
     display: flex;
@@ -41,6 +58,7 @@ main {
     text-align: center;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: white;
 }
 .grid-element h1 {
     margin: 0.5rem 0;

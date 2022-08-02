@@ -29,7 +29,7 @@ ul {
    padding: 1vh;
    display: inline-block;
    border-radius: 1rem;
-   font-size: 1.7rem;
+   font-size: 1.5rem;
    color: white;
   }
 .nav-link:active {
@@ -39,7 +39,7 @@ main {
    width: 100%;
    position: absolute;
    margin: 0 auto;
-   top: 6rem;
+   top: 5.5rem;
    z-index: -1;
 }
 .supreme-parent-info {
