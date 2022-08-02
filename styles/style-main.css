@@ -6,6 +6,7 @@
 html {
    font-size: 62.5%;
    font-family: verdana;
+   scroll-behavior: smooth;
 }
 a {
    text-decoration: none;
@@ -21,12 +22,15 @@ ul {
    position: fixed;
    z-index: 1;
    background-color: skyblue;
+   box-shadow: 0 2px 4px 0 black;
+   background-color: #101920ff;
 }
 .nav-link {
    padding: 1vh;
    display: inline-block;
    border-radius: 1rem;
    font-size: 1.7rem;
+   color: white;
   }
 .nav-link:active {
    background-color: blueviolet;

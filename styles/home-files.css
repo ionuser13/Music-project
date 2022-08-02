@@ -2,26 +2,48 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+}
+body {
+    background-color: #101920ff;
 }
 main {
     height: 100%;
 }
-section {
-    position: relative;
-    top: 3rem;
+#welcome-section {
+    color: white;
+    height: calc(100% - 6rem);
+    display: flex;
+    flex-direction: column;
 }
-#description {
-    margin: 1rem 4rem;
+#welcome-section h1 {
+    font-size: 4rem;
+    border: 1px solid white;
+    text-align: center;
+}
+#welcome-description {
+    margin: 1rem 3rem;
 }
 #grid-container {
     display: grid;
-    grid-template: 4 / 2;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin: 0 3rem;
+    gap: 2rem 0rem;
 }
 .grid-element {
     display: flex;
     flex-direction: column;
-    width: max-content;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.grid-element h1 {
+    margin: 0.5rem 0;
 }
 .grid-element img {
     width: 50px;
