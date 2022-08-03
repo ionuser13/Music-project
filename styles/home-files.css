@@ -24,7 +24,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    filter: blur(10px);
+    filter: blur(5px);
 
 }
 #welcome-section h1 {
@@ -63,7 +63,6 @@ main {
 .grid-element h1 {
     margin: 0.5rem 0;
 }
-.grid-element img {
-    width: 50px;
-    height: 50px;
+.grid-element .covers {
+    width: 5rem;
 }
