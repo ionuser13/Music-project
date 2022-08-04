@@ -39,6 +39,7 @@ main {
     width: 50%;
     position: relative;
     left: -27%;
+    border-radius: 20px;
 }
 #welcome-description h2 {
     margin-bottom: 1rem;
