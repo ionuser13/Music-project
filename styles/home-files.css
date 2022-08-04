@@ -10,7 +10,7 @@ main {
     height: 100%;
 }
 #welcome-section {
-    color: white;
+    width: 100%;
     height: calc(100% - 6rem);
     display: flex;
     flex-direction: column;
@@ -25,17 +25,39 @@ main {
     background-size: cover;
     z-index: -1;
     filter: blur(5px);
-
 }
 #welcome-section h1 {
     font-size: 4rem;
     width: max-content;
-    border: 1px solid white;
     text-align: center;
     margin: 3rem 0;
+    color: white;
 }
 #welcome-description {
-    margin: 1rem 3rem;
+    padding: 2rem 2rem 2rem 3rem;
+    background: linear-gradient(90deg, black 0 10%, #006B38FF 50% 100%) ;
+    width: 50%;
+    position: relative;
+    left: -27%;
+}
+#welcome-description h2 {
+    margin-bottom: 1rem;
+    width: 150%;
+    font-size: 4rem;
+    color: rgb(226, 94, 132);
+}
+#welcome-description p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: white;   
+}
+#playlist-container {
+    position: absolute;
+    z-index: 1;
+    bottom: 90px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 #grid-container {
     height: calc(100vh - 6rem);
@@ -45,6 +67,7 @@ main {
     margin: 0 3rem;
     gap: 2rem 0rem;
     position: relative;
+    z-index: 1;
     top: 2rem;
 }
 .grid-element {
@@ -59,10 +82,11 @@ main {
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     color: white;
+    background: linear-gradient(25deg, #101920ff 0 10%, #006B38FF 40% 60%, #101920ff 90% 100%);
 }
 .grid-element h1 {
     margin: 0.5rem 0;
 }
 .grid-element .covers {
-    width: 5rem;
+    width: 10rem;
 }

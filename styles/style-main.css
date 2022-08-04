@@ -44,6 +44,8 @@ main {
    margin: 0 auto;
    top: 5.5rem;
    z-index: -1;
+   color: white;
+   background-color: #101920ff;
 }
 .supreme-parent-info {
    width: 100%;
@@ -73,12 +75,7 @@ main {
  }
  .short-info table {
    margin: 0 auto;
- }
- .short-sub-info {
-   padding: 0 1rem;
-   text-align: center;
-   display: inline-block;
-   vertical-align: middle;
+   font-size: 1.3rem;
  }
  article.socials {
    width: 100%;
@@ -91,6 +88,7 @@ main {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+   background-color: #006B38FF;
  }
  #member-socials h3 {
    font-size: 1.8rem;
@@ -116,9 +114,6 @@ main {
  td {
    padding: 1%;
  }
-.short-sub-info figure, .short-info figure {
-   padding: 0.7rem;
-}
 .socials {
    display: flex;
    width: max-content;
@@ -142,6 +137,9 @@ table, hr {
    justify-content: center;
    overflow: hidden; 
 }
+.parent-song-body div:last-of-type {
+   background-color: #006B38FF;
+}
 iframe {
    width: auto;
    height: auto;
@@ -150,6 +148,7 @@ iframe {
 #platforms {
    display: flex;
    justify-content: space-evenly;
+   width: 100%;
    padding: 1rem 0;
 }
 #platforms figure {
