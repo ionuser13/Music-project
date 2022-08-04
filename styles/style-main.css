@@ -1,3 +1,6 @@
+:root {
+   --back-color: #101920ff;
+}
 *{
   box-sizing: border-box; 
   padding: 0;
@@ -26,7 +29,7 @@ ul {
    z-index: 1;
    background-color: skyblue;
    box-shadow: 0 2px 4px 0 black;
-   background-color: #101920ff;
+   background-color: var(--back-color);
 }
 .nav-link {
    padding: 1vh;
@@ -45,7 +48,6 @@ main {
    top: 5.5rem;
    z-index: -1;
    color: white;
-   background-color: #101920ff;
 }
 .supreme-parent-info {
    width: 100%;
@@ -56,14 +58,11 @@ main {
    justify-content: center;
 }
 .parent-info {
-   margin: 1rem;
-   padding: 1rem 1rem;
+   width: 100%;
+   padding: 2rem 1rem;
    display: flex;
    flex-direction: column;
    align-items: center;
-   /*text-align: center;
-   display: inline-block;
-   vertical-align: middle; put on media query*/
  }
  .parent-info h1 {
    font-size: 2.6rem;
@@ -73,6 +72,9 @@ main {
    vertical-align: middle;
    height: 100%;
  }
+ .short-info a {
+   color: white;
+ }
  .short-info table {
    margin: 0 auto;
    font-size: 1.3rem;
@@ -81,18 +83,18 @@ main {
    width: 100%;
    display: flex;
    justify-content: space-evenly;
-   margin: 1rem 0;
+   padding: 1rem 0;
  }
  #member-socials {
    width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-   background-color: #006B38FF;
  }
  #member-socials h3 {
    font-size: 1.8rem;
-   margin: 1rem 0;
+   margin: 1rem auto;
+   width: max-content;
  }
 .body1 {
    padding: 1rem 1rem;
@@ -135,13 +137,12 @@ table, hr {
    flex-direction: column;
    flex-wrap: nowrap;
    justify-content: center;
-   overflow: hidden; 
+   overflow: hidden;
+   background-color: var(--back-color);
 }
 .parent-song-body div:last-of-type {
-   background-color: #006B38FF;
-}
+   background-image: linear-gradient(to bottom, #131b22, #0f2831, #03353d, #004344, #005145, #005145, #005145, #005145, #004344, #03353d, #0f2831, #131b22);}
 iframe {
-   width: auto;
    height: auto;
    margin: 1.5rem 0;
 }

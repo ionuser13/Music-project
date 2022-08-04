@@ -8,10 +8,12 @@ body {
 }
 main {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 #welcome-section {
     width: 100%;
-    height: calc(100% - 6rem);
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +21,7 @@ main {
     z-index: 1;
 }
 .bg-image {
-    height: calc(100vh - 6rem);
+    height: 90vh; /*add media query for screens with height more than 700px*/
     background-image: url(https://noticias.nmas.com.mx/wp-content/uploads/2021/11/Spotify-Magic-Playlist-te-ayudara%CC%81-a-encontrar-canciones-parecidas-a-tu-favorita.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,6 +29,7 @@ main {
     filter: blur(5px);
 }
 #welcome-section h1 {
+    display: flex;
     font-size: 4rem;
     width: max-content;
     text-align: center;
@@ -35,8 +38,7 @@ main {
 }
 #welcome-description {
     padding: 2rem 2rem 2rem 3rem;
-    background: linear-gradient(90deg, black 0 10%, #006B38FF 50% 100%) ;
-    width: 50%;
+    background-image: linear-gradient(to right, #131b22, #062c37, #003e44, #005145, #14623c);    width: 50%;
     position: relative;
     left: -27%;
     border-radius: 20px;
@@ -60,13 +62,12 @@ main {
     margin: 1rem auto 0 auto;
     padding: 2.5rem 0;
     font-size: 1.7rem;
-    background: linear-gradient(90deg, black 0 10%, #006B38FF 50% 100%) ;
+    background: linear-gradient(90deg, black 0 10%, rgb(226, 94, 132) 50% 100%);
     border-radius: 10px;
 }
 #playlist-container {
-    position: absolute;
     z-index: 1;
-    bottom: 90px;
+    bottom: 10vh;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -94,8 +95,7 @@ main {
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     color: white;
-    background: linear-gradient(25deg, #101920ff 0 10%, #006B38FF 40% 60%, #101920ff 90% 100%);
-}
+    background-image: linear-gradient(to bottom, #131b22, #0f2831, #03353d, #004344, #005145, #005145, #005145, #005145, #004344, #03353d, #0f2831, #131b22);}
 .grid-element h1 {
     margin: 0.5rem 0;
 }
