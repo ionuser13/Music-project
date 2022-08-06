@@ -48,12 +48,12 @@
   bottom: 0;
   padding-bottom: 5vh;
 }
-@media (min-width: 800px) {
+@media (min-width: 750px) {
   #contact-intro h2{
     font-size: 10rem;
   }
   #contact-intro p {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .contact-links a {
     padding: 1rem;
