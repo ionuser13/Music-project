@@ -66,3 +66,27 @@
     font-size: 2.5rem;
   }
 }
+@media (min-width: 1000px) {
+  #contact-intro h2{
+    font-size: 8rem;
+  }
+  #contact-intro p {
+    font-size: 3rem;
+  }
+  .contact-links a {
+    padding: 1.5rem;
+  }
+  .social-media {
+    width: 8rem;
+  }
+  #footer-text {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 2000px) {
+
+  .contact-links {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
