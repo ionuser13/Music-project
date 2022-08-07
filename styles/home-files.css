@@ -120,11 +120,6 @@ main {
     z-index: 1;
     height: 10vh;
 }
-@media (min-height: 700px) {
-    .bg-image {
-        height: 68vh;
-    }
-}
 @media (max-width: 300px) {
     #welcome-description h2 {
         font-size: 4vh;
@@ -154,6 +149,11 @@ main {
         left: -27%;
         padding: 2rem 0.5rem;
         font-size: 4vh;
+    }
+}/*start tablet*/
+@media (min-height: 700px) {
+    .bg-image {
+        height: 68vh;
     }
 }
 @media (min-width: 750px)
@@ -216,6 +216,5 @@ main {
         padding: 0 0.5vw;
     }
 }
-/*for width less than 300px: change div for grid, or change the number of columns to 1
-for width between 500 and 700: less width for grid elements
+/*for width between 500 and 700: less width for grid elements
 */
