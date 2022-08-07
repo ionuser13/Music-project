@@ -119,7 +119,7 @@ main {
     position: relative;
     z-index: 1;
     height: 10vh;
-}
+}/*for devices with screens smaller than average*/
 @media (max-width: 300px) {
     #welcome-description h2 {
         font-size: 4vh;
@@ -216,5 +216,6 @@ main {
         padding: 0 0.5vw;
     }
 }
+/*start media queries for laptops*/
 /*for width between 500 and 700: less width for grid elements
 */
