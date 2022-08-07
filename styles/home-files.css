@@ -19,7 +19,7 @@ main {
     z-index: 1;
 }
 .bg-image {
-    height: 90vh; /*add media query for screens with height more than 700px*/
+    min-height: 77vh; /*add media query for screens with height more than 700px*/
     background-image: url(https://noticias.nmas.com.mx/wp-content/uploads/2021/11/Spotify-Magic-Playlist-te-ayudara%CC%81-a-encontrar-canciones-parecidas-a-tu-favorita.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,13 +28,14 @@ main {
 }
 #welcome-section h1 {
     display: flex;
-    font-size: 4rem;
+    font-size: 4vh;
     width: max-content;
     text-align: center;
-    margin: 3rem 0;
+    margin: 2vh 0;
     color: white;
 }
 #welcome-description {
+    max-height: 67vh;
     padding: 2rem 2rem 2rem 3rem;
     background-image: linear-gradient(to right, #131b22, #062c37, #003e44, #005145, #14623c);    width: 50%;
     position: relative;
@@ -44,13 +45,27 @@ main {
 #welcome-description h2 {
     margin-bottom: 1rem;
     width: 150%;
-    font-size: 4rem;
+    font-size: 5.3vh;
     color: #a54863;
 }
 #welcome-description p {
-    font-size: 1.4rem;
+    max-height: 100%;
+    font-size: 2vh;
     line-height: 1.4;
     color: white;   
+}
+#playlist-container {
+    z-index: 1;
+    bottom: 10vh;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+#gallery {
+    position: relative;
+    z-index: 1;
+    width: 100%;
 }
 .gallery-title {
     text-align: center;
@@ -63,15 +78,7 @@ main {
     background-image: linear-gradient(to right, #000000, #371d24, #6b3243, #a54863, #e25e84);
     border-radius: 10px;
 }
-#playlist-container {
-    z-index: 1;
-    bottom: 10vh;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
 #grid-container {
-    height: calc(100vh - 6rem);
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
@@ -85,20 +92,25 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
-    padding: 1.5rem 0;
+    justify-content: space-around;
+    min-width: 80%;
+    width: 85%;
+    padding: 4vh 0;
     margin: 0 auto;
     text-align: center;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     color: white;
-    background-image: linear-gradient(to bottom, #131b22, #0f2831, #03353d, #004344, #005145, #005145, #005145, #005145, #004344, #03353d, #0f2831, #131b22);}
+    background-image: linear-gradient(to bottom, #131b22, #0f2831, #03353d, #004344, #005145, #005145, #005145, #005145, #004344, #03353d, #0f2831, #131b22);
+}
 .grid-element h1 {
-    margin: 0.5rem 0;
+    margin: 0.5rem auto;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0 0.5vw;
 }
 .grid-element .covers {
-    width: 10rem;
+    width: 12vh;
 }
 #footer {
     position: relative;
@@ -110,3 +122,66 @@ main {
         height: 68vh;
     }
 }
+@media (min-width: 750px)
+{
+    #container {
+        position: absolute;
+        width: 100%;
+    }
+    .bg-image {
+        height: 62vh;
+    }
+    #welcome-description {
+        padding: 2rem 2rem 2rem 3.5rem;
+        left: -37.5%;
+        width: 30%;
+    }
+    #welcome-description h2 {
+        font-size: 6.5vh;
+    }
+    #welcome-description p {
+        line-height: 1.4;
+        color: white;   
+    }
+    #playlist-container {
+        position: relative;
+        bottom: 45vh;
+        display: flex;
+        width: 60%;/**/
+        margin: 0 0 0 35%;
+    }
+    #gallery {
+        top: 77vh;
+    }
+    .gallery-title {
+        width: 45%;
+        left: -36%;
+        font-size: 2.5rem;
+    }
+    #grid-container {
+        grid-template-columns: 30% 30% 30%;
+        gap: 2vh 0;
+        margin: 0;
+    }
+    .grid-element {
+        width: 90%;
+        height: 100%;
+        margin: auto 0;    
+        justify-content: center;
+        line-height: 1.8;
+    }
+    .grid-element h4 {
+        font-size: 1.7rem;
+    }
+    .grid-element h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .grid-element .covers {
+        width: 16vh;
+        padding: 0 0.5vw;
+    }
+}
+/*for width less than 300px: change div for grid, or change the number of columns to 1
+for width between 500 and 700: less width for grid elements
+*/
