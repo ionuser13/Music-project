@@ -255,13 +255,13 @@ main {
     #welcome-description {
         left: -41%;
         width: 20%;
-        min-height: 73vh;
+        min-height: 70vh;
     }
     #welcome-description h2 {
-        font-size: 7.3vh;
+        font-size: 7.6vh;
     }
     #welcome-description p {
-        font-size: 2.3vh;  
+        font-size: 2.2vh;  
     }
     .grid-element {
         width: 11vw;
@@ -273,6 +273,9 @@ main {
         top: 2vh;
         width: 17%;
         left: -42%;
+    }
+    #welcome-description p {
+        font-size: 2vh;
     }
     .gallery-title {
         font-size: 3vh;
