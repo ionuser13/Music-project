@@ -15,7 +15,7 @@ a {
    text-decoration: none;
 }
 .cover {
-   width: 20rem;
+   width: 25vw;
 }
 ul {
    list-style: none;
@@ -45,7 +45,7 @@ main {
    width: 100%;
    position: absolute;
    margin: 0 auto;
-   top: 5.5rem;
+   top: 6vh;
    z-index: -1;
    color: white;
 }
@@ -59,13 +59,13 @@ main {
 }
 .parent-info {
    width: 100%;
-   padding: 2rem 1rem;
+   padding: 3vh 1vh;
    display: flex;
    flex-direction: column;
    align-items: center;
  }
  .parent-info h1 {
-   font-size: 2.6rem;
+   font-size: 4vw;
  }
  .short-info {
    display: inline-block;
@@ -77,13 +77,13 @@ main {
  }
  .short-info table {
    margin: 0 auto;
-   font-size: 1.3rem;
+   font-size: 1.8vw;
  }
  article.socials {
    width: 100%;
    display: flex;
    justify-content: space-evenly;
-   padding: 1rem 0;
+   padding: 1vh 0;
  }
  #member-socials {
    width: 100%;
@@ -154,4 +154,19 @@ iframe {
 }
 #platforms figure {
    margin: auto 0;
+}
+@media (min-width: 750px) {
+   .parent-info {
+      flex-direction: row;
+      justify-content: center;
+   }
+   .short-info table {
+      margin-left: 2vw;
+   }
+   .parent-song-body {
+      flex-direction: row;
+   }
+   .parent-song-body div:last-of-type{
+      height: max-content;
+      background-image: linear-gradient(to bottom, #111820, #0e2632, #003640, #004648, #005649, #005649, #005649, #005649, #004648, #003640, #0e2632, #111820);   }
 }
