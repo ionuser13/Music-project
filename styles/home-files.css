@@ -41,6 +41,7 @@ main {
     position: relative;
     left: -27%;
     border-radius: 20px;
+    margin-top: 2vh;
 }
 #welcome-description h2 {
     margin-bottom: 1rem;
@@ -70,10 +71,10 @@ main {
 .gallery-title {
     text-align: center;
     position: relative;
-    width: 50%;
+    width: 45%;
     left: -30%;
     margin: 1rem auto 0 auto;
-    padding: 2.5rem 0;
+    padding: 2.8vh 0;
     font-size: 1.7rem;
     background-image: linear-gradient(to right, #000000, #371d24, #6b3243, #a54863, #e25e84);
     border-radius: 10px;
@@ -166,7 +167,6 @@ main {
         height: 62vh;
     }
     #welcome-description {
-        padding: 2rem 2rem 2rem 3.5rem;
         left: -37.5%;
         width: 30%;
     }
@@ -216,6 +216,85 @@ main {
         padding: 0 0.5vw;
     }
 }
-/*start media queries for laptops*/
-/*for width between 500 and 700: less width for grid elements
+@media (min-height: 1024px) {
+    #welcome-description {
+        width: 33%;
+        left: -35%;
+    }
+    #welcome-description p {
+        font-size: 1.8vh;
+    }
+    #playlist-container {
+        height: 38vh;
+        bottom: 40vh;
+    }
+}
+@media (min-width: 1050px) {
+    #welcome-description {
+        width: 20%;
+        left: -42%;
+    }
+    #playlist-container {
+        height: 40vh;
+        bottom: 60vh;
+        right: 5vw;
+    }
+    .gallery-title {
+        width: 30%;
+        font-size: 2.3vw;
+    }
+    .grid-element {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .grid-element .covers {
+        width: 25vh;
+    }
+}
+@media (min-width: 1440px) {
+    #welcome-description {
+        left: -41%;
+        width: 20%;
+        min-height: 73vh;
+    }
+    #welcome-description h2 {
+        font-size: 7.3vh;
+    }
+    #welcome-description p {
+        font-size: 2.3vh;  
+    }
+    .grid-element {
+        width: 11vw;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 2560px) {
+    #welcome-description {
+        top: 2vh;
+        width: 17%;
+        left: -42%;
+    }
+    .gallery-title {
+        font-size: 3vh;
+        width:25%;
+        left: -41.5%;
+    }
+    .grid-element h1 {
+        font-size: 3vh;
+    }
+    .grid-element h4 {
+        font-size: 2vh;
+    }
+    #playlist-container {
+        width: 40vw;
+        right: 0.5vw;
+    }
+}
+/*start media queries for laptops: 
+ - less width for grid elements
+ - less width for p text from intro ..?
+ - less width for spotify player
+ - less font size
+
+ - bigger nav bar
 */
