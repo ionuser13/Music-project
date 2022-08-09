@@ -7,7 +7,7 @@
   place-content: center;
   text-align: center;
   position: absolute;
-  top: -5rem;
+  top: -5vh;
   overflow-x: hidden;
 }
 #contact-intro h2{
