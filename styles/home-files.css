@@ -81,22 +81,22 @@ main {
 }
 #grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
     justify-content: center;
-    margin: 0 3rem;
-    gap: 2rem 0rem;
+    margin: 0 auto;
+    gap: 3rem;
     position: relative;
     z-index: 1;
     top: 2rem;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .grid-element {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    min-width: 80%;
     width: 85%;
-    padding: 4vh 0;
+    padding: 3rem 1rem;
     margin: 0 auto;
     text-align: center;
     border-radius: 1rem;
@@ -105,23 +105,27 @@ main {
     background-image: linear-gradient(to bottom, #131b22, #0f2831, #03353d, #004344, #005145, #005145, #005145, #005145, #004344, #03353d, #0f2831, #131b22);
 }
 .grid-element h1 {
-    margin: 0.5rem auto;
-    width: 100%;
+    margin: 0.5rem 0;
     font-size: 1.4rem;
-    padding: 0 0.5vw;
 }
 .grid-element .covers {
-    width: 12vh;
-}
-.song-description {
     width: 100%;
 }
+
 #footer {
     position: relative;
     z-index: 1;
     height: 10vh;
-}/*for devices with screens smaller than average*/
-@media (max-width: 300px) {
+}
+/* for devices with screens smaller than average */
+/* @media (min-width: 600px) {
+    #grid-container { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    #grid-container { grid-template-columns: repeat(3, 1fr); }
+  } */
+  
+@media (max-width: 430px) {
     #welcome-description h2 {
         font-size: 4vh;
     }
@@ -131,11 +135,11 @@ main {
         align-items: center;
     }
     .grid-element {
-        width: 100%;
+        width: 70%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .song-description {
         width: max-content;
@@ -151,7 +155,8 @@ main {
         padding: 2rem 0.5rem;
         font-size: 4vh;
     }
-}/*start tablet*/
+}
+/*start tablet*/
 @media (min-height: 700px) {
     .bg-image {
         height: 68vh;
@@ -192,18 +197,18 @@ main {
         left: -36%;
         font-size: 2.5rem;
     }
-    #grid-container {
+    /* #grid-container {
         grid-template-columns: 30% 30% 30%;
         gap: 2vh 0;
         margin: 0;
-    }
-    .grid-element {
+    } */
+    /* .grid-element {
         width: 90%;
         height: 100%;
         margin: auto 0;    
         justify-content: center;
         line-height: 1.8;
-    }
+    } */
     .grid-element h4 {
         font-size: 1.7rem;
     }
@@ -212,7 +217,6 @@ main {
         width: 100%;
     }
     .grid-element .covers {
-        width: 16vh;
         padding: 0 0.5vw;
     }
 }
@@ -243,13 +247,13 @@ main {
         width: 30%;
         font-size: 2.3vw;
     }
-    .grid-element {
+    /* .grid-element {
         width: 60%;
         margin: 0 auto;
     }
     .grid-element .covers {
         width: 25vh;
-    }
+    } */
 }
 @media (min-width: 1440px) {
     #welcome-description {
@@ -263,10 +267,10 @@ main {
     #welcome-description p {
         font-size: 2.2vh;  
     }
-    .grid-element {
+    /* .grid-element {
         width: 11vw;
         margin: 0 auto;
-    }
+    } */
 }
 @media (min-width: 2560px) {
     #welcome-description {
@@ -282,11 +286,8 @@ main {
         width:25%;
         left: -41.5%;
     }
-    .grid-element h1 {
-        font-size: 3vh;
-    }
-    .grid-element h4 {
-        font-size: 2vh;
+    #grid-container {
+        max-width: 2000px;
     }
     #playlist-container {
         width: 40vw;
