@@ -21,7 +21,7 @@ async function fetchData(urlApi) {
         let view = `
         ${songs.items.map(song =>
             `
-            <a href="https://genius.com/${song.track.artists[0]["name"].toLowerCase().replaceAll(" ", "-").normalize('NFD')}-${song.track.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replaceAll(" ", "-").replace(/\s*\(.*?\)\s*/g, "")}-lyrics" class="grid-element" target="_blank">
+            <a href="https://genius.com/${song.track.artists[0]["name"].toLowerCase().replaceAll(" ", "-").normalize('NFD').replace(/[\u0300-\u036f]/g, "")}-${song.track.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replaceAll(/\s*\(.*?\)\s*/g, "").replaceAll(/[.,\/#!$\^&\*;:{}=\-_`~()]/g, " ").replaceAll(" ", "-").replaceAll(/\s{1,}/g,"-")}-lyrics" class="grid-element" target="_blank">
                 <img class="covers" src="${song.track.album.images[1].url}">
                 <div class="song-description">
                     <h1>${song.track.name}</h1> 
