@@ -1,6 +1,7 @@
 const spotifyApi = "https://spotify23.p.rapidapi.com/playlist_tracks/?id=5CjFkIeeYmBkWbGqRIYCbR&offset=0&limit=100";
 
 const grid = null || document.getElementById("grid-container");
+const gridElement = null || document.querySelectorAll(".grid-element")
 
 const options = {
 	method: 'GET',
@@ -18,20 +19,23 @@ async function fetchData(urlApi) {
     try {
         const songs = await fetchData(spotifyApi);
         let view = `
-        ${songs.items.map(song =>`
-            <a href="./roi_videoclub.html" class="grid-element">
+        ${songs.items.map(song =>
+            `
+            <a href="./songs/${song.track.name.toLowerCase().replaceAll(" ", "-")}.html" class="grid-element">
                 <img class="covers" src="${song.track.album.images[1].url}">
                 <div class="song-description">
                     <h1>${song.track.name}</h1> 
                     <h4>${song.track.artists[0]["name"]}</h4>
                 </div>
             </a>
-        `).join("")}   
-        `;
+        `).join("")
+        }`
         grid.innerHTML = view;
     }
     catch (error){
         console.error(error)
         grid.innerHTML = `An error has occurred: ${error}`
+
     }
 })();
+// ;
