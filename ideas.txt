@@ -1,3 +1,0 @@
-degrades on title and cover part (darkest color up to light color down, or just high/medium contrast between cover and lyrics color)
-layers...
-album color palet on the rest of the body
